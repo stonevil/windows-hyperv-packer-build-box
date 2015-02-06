@@ -12,11 +12,10 @@ system 'vagrant plugin install vmware_fusion' if ENV['VAGRANT_DEFAULT_PROVIDER']
 system 'vagrant plugin install vagrant-berkshelf' unless Vagrant.has_plugin?('vagrant-berkshelf')
 system 'vagrant plugin install vagrant-omnibus' unless Vagrant.has_plugin?('vagrant-omnibus')
 
-Vagrant.require_version ">= 1.6.2"
+Vagrant.require_version ">= 1.7.2"
 
 Vagrant.configure("2") do |config|
-#  config.vm.define = "windows_win81x64_packer"
-  config.vm.box = "windows-8.1x64-enterprise"
+  config.vm.box = "eval-win81x64-enterprise-nocm"
   config.vm.communicator = :winrm
 
   # Admin user name and password
