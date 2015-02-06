@@ -1,0 +1,11 @@
+name 'windows-hyperv-packer-build-box'
+maintainer 'Myroslav Rys'
+maintainer_email 'stonevil@gmail.com'
+license 'All rights reserved'
+description 'Prepare Windows box with Hyper-V for Packer build host'
+long_description 'Prepare Windows box with Hyper-V for Packer build host'
+version '0.2.0'
+
+depends 'omnibus_updater_windows'
+depends 'chocolatey'
+depends 'windows'
