@@ -3,4 +3,4 @@ if node['platform_family'] == 'windows'
   default['chocolatey']['upgrade'] = true
 end
 
-default['chocolatey']['packages'] = %w(sysinternals 7zip console-devel vim git git.commandline git.install git-credential-winstore tortoisegit dotpeek wget make cmake golang packer chefdk)
+default['chocolatey']['packages'] = %w(sysinternals 7zip vim git git.commandline git.install git-credential-winstore dotpeek wget make cmake golang packer chefdk)
