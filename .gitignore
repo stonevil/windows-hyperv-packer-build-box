@@ -8,6 +8,7 @@ crash.log
 tmp
 .vagrant/
 *.swp
+Berksfile.lock
 Makefile.local
 
 .DS_Store
